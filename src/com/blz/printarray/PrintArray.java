@@ -1,18 +1,8 @@
 package com.blz.printarray;
 
 public class PrintArray {
-	private static void toPrint(Integer[] array) {
-		for (int element : array)
-			System.out.println(element);
-	}
-
-	private static void toPrint(Double[] array) {
-		for (double element : array)
-			System.out.println(element);
-	}
-
-	private static void toPrint(Character[] array) {
-		for (char element : array)
+	private static <T> void toPrint(T[] array) {
+		for (T element : array)
 			System.out.println(element);
 	}
 
